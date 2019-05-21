@@ -1,0 +1,13 @@
+// gcc -z execstack -o hw hw.c
+
+char shellcode[] = "\x31\xDB\xF7\xE3\xB0\x0A\x50"
+                   "\x68\x6F\x72\x6C\x64\x68\x6F"
+                   "\x2C\x20\x57\x68\x48\x65\x6C"
+                   "\x6C\xB0\x04\xB3\x01\x89\xE1"
+                   "\xB2\x0D\xCD\x80\xB0\x01\x31"
+                   "\xDB\xCD\x80";
+
+int main() {
+	(*(void(*)()) shellcode)();
+	return 0;
+}

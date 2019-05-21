@@ -1,0 +1,5 @@
+# bomb
+  1: 84371065
+  2: dcaotdae -- Required a patch (s 0x0804996a and then wa jmp 0x804999a)
+  3: LLRLLRLLRR
+  4: KDG3DU32D38EVVXJM64

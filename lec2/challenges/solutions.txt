@@ -1,0 +1,9 @@
+0x00a: g00dJ0B!
+0x00b: w0wgreat
+0x01 : 5274
+0x02 : 338724
+0x03 : 338724
+0x04 : 12345  -- (anything as long as first continous numbers add up to exactly 15. 1234565948630 works 12346 does not work)
+0x05 : 88     -- (similar to 0x04 but number must be even, also number must fit in 32-bit register)
+0x06 : 4444   -- (similar to 0x05 but an environment variable starting with LOL must be set -- e.g. LOL='' ./crackme0x06)
+0x07 : 4444   -- (same 0x06, an environment variable starting with LOL must be set -- e.g. LOL='' ./crackme0x07)

