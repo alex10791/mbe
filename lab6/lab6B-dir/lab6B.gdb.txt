@@ -1,0 +1,9 @@
+
+set follow-fork-mode child
+break hash_pass
+commands 1
+set *(int*)($esp+236) = *(int*)($esp+236) + 4
+end
+break *login_prompt+296
+continue
+x/64xw $esp

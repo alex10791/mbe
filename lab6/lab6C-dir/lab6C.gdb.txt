@@ -1,0 +1,4 @@
+
+set follow-fork-mode child
+print secret_backdoor
+continue
