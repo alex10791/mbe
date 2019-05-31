@@ -4,7 +4,7 @@ define stack
 x/64xw $esp
 end
 # break setup_account
-# break make_note
+break make_note
 # break write_wrap
 # break *setup_account+162
 # break *setup_account+271
