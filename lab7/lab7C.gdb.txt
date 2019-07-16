@@ -1,0 +1,4 @@
+
+break small_str
+break big_str
+continue
